@@ -13,11 +13,30 @@ export default function Navbar() {
         </div>
         <div className="hidden lg:block">
           <ul className="flex space-x-10 text-black/50 font-josefin font-light font-xs">
-            <li className="hover:text-black cursor-pointer">Beranda</li>
-            <li className="hover:text-black cursor-pointer">
-              Pendidikan & Pengalaman
+            <li
+              className="hover:text-black cursor-pointer"
+              onClick={() => setToggleMenu(false)}
+            >
+              <Link href="/">
+                <a>Beranda</a>
+              </Link>
             </li>
-            <li className="hover:text-black cursor-pointer">Kontak</li>
+            <li
+              className="hover:text-black cursor-pointer"
+              onClick={() => setToggleMenu(false)}
+            >
+              <Link href="#exp">
+                <a>Pendidikan & Pengalaman</a>
+              </Link>
+            </li>
+            <li
+              className="hover:text-black cursor-pointer"
+              onClick={() => setToggleMenu(false)}
+            >
+              <Link href="#contact">
+                <a>Kontak</a>
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="-mt-1.5">
