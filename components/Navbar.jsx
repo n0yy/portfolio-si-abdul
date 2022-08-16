@@ -24,7 +24,10 @@ export default function Navbar() {
           <span className="hidden lg:block">
             <ButtonPrimary href="/" name="kontak" />
           </span>
-          <span className="cursor-pointer" onClick={() => setToggleMenu(true)}>
+          <span
+            className="cursor-pointer block lg:hidden"
+            onClick={() => setToggleMenu(true)}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-6 w-6"
